@@ -10,18 +10,18 @@ public:
 
     void displayBoard() const;
 
-    bool placePiece(int column, char piece);
+    bool placePiece(int column, char piece); // Move to player
 
-    bool checkWin(char piece) const;
+    bool checkWin(char piece) const; // Move to utility
 
-    bool isFull() const;
+    bool isFull() const; // Move to utility
 
 private:
     std::vector<std::vector<char>> grid;
 
-    bool checkHorizontalWin(char piece) const;
-    bool checkVerticalWin(char piece) const;
-    bool checkDiagonalWin(char piece) const;
+    bool checkHorizontalWin(char piece) const; // Move to utility
+    bool checkVerticalWin(char piece) const; // Move to utility
+    bool checkDiagonalWin(char piece) const; // Move to utility
 
     static const int ROWS = 6;
     static const int COLUMNS = 7;
