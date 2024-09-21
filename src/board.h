@@ -10,6 +10,8 @@ public:
 
     void displayBoard() const;
 
+    bool validMove(int column, char player) const;
+
     bool placePiece(int column, char piece); // Move to player
 
     bool checkWin(char piece) const; // Move to utility
