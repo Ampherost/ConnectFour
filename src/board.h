@@ -12,18 +12,11 @@ public:
 
     bool validMove(int column, char player) const;
 
-    bool placePiece(int column, char piece); // Move to player
+    bool placePiece(int column, char piece); 
 
-    bool checkWin(char piece) const; // Move to utility
-
-    bool isFull() const; // Move to utility
 
 private:
     std::vector<std::vector<char>> grid;
-
-    bool checkHorizontalWin(char piece) const; // Move to utility
-    bool checkVerticalWin(char piece) const; // Move to utility
-    bool checkDiagonalWin(char piece) const; // Move to utility
 
     static const int ROWS = 6;
     static const int COLUMNS = 7;
